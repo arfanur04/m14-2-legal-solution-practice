@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Legal Solution</title>
+		<!-- font awesome -->
+		<script
+			src="https://kit.fontawesome.com/e61df7a87d.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- daisyUI and tailwind css -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/daisyui@4.4.2/dist/full.min.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<!-- tailwind custom color -->
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							colorBrown: "#B68C5A",
+							colorGray: "#707070",
+							// colorBlack: "#111111",
+							// colorDarkGray: "#383838",
+							colorLightGray: "#e7e7e7",
+						},
+					},
+				},
+			};
+		</script>
+		<!-- custom css -->
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body class="font-poppins">
+		<header class="container mx-auto">
+			<!-- Navbar  -->
+			<div class="my-6 navbar bg-base-100">
+				<div class="navbar-start">
+					<div class="dropdown">
+						<label tabindex="0" class="btn btn-ghost lg:hidden">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-5 h-5"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h8m-8 6h16"
+								/>
+							</svg>
+						</label>
+						<ul
+							tabindex="0"
+							class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-colorGray text-base font-normal"
+						>
+							<li><a>Home</a></li>
+							<li>
+								<a
+									>Services
+									<i class="fa-solid fa-chevron-right"></i>
+								</a>
+							</li>
+							<li>
+								<a
+									>Cases
+									<i class="fa-solid fa-chevron-right"></i>
+								</a>
+							</li>
+							<li>
+								<a
+									>Blog
+									<i class="fa-solid fa-chevron-right"></i>
+								</a>
+							</li>
+							<li>
+								<a
+									>Contact Us
+									<i class="fa-solid fa-chevron-right"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a class="text-xl btn btn-ghost">
+						<img src="images/logo2.png" class="h-10 lg:h-12" alt="" />
+					</a>
+				</div>
+				<div class="hidden navbar-center lg:flex">
+					<ul
+						class="px-1 text-base font-normal menu menu-horizontal text-colorGray"
+					>
+						<li><a>Home</a></li>
+						<li>
+							<a
+								>Services
+								<i class="fa-solid fa-chevron-right"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								>Cases
+								<i class="fa-solid fa-chevron-right"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								>Blog
+								<i class="fa-solid fa-chevron-right"></i>
+							</a>
+						</li>
+						<li>
+							<a
+								>Contact Us
+								<i class="fa-solid fa-chevron-right"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<a
+						class="h-auto px-4 mr-2 text-white btn bg-colorBrown lg:px-7 lg:mr-0"
+						>Free <br class="block md:hidden" />
+						Consultation</a
+					>
+				</div>
+			</div>
+
+			<!-- (banner) Provide Legal Solutions -->
+			<section class="container px-4 mx-auto lg:px-0">
+				<div
+					class="bg-[url('images/banner.png')] h-[550px] bg-no-repeat bg-cover text-white rounded-lg border flex flex-col justify-center items-center space-y-6"
+				>
+					<h2
+						class="text-4xl font-extrabold text-center lg:text-7xl font-garamond"
+					>
+						We Provide Effective <br />
+						Legal Solutions
+					</h2>
+					<p class="max-w-2xl text-base text-center colorLightGray">
+						There are many variations of passages of Lorem Ipsum available, but
+						the majority have suffered alteration in some form, by injected
+						humour.
+					</p>
+					<div
+						class="flex flex-col items-center justify-center gap-6 lg:flex-row"
+					>
+						<input
+							type="text"
+							placeholder="Search your services"
+							class="p-5 rounded-lg lg:w-[500px] w-full"
+						/>
+						<button
+							class="h-auto px-10 py-4 text-xl text-white btn bg-colorBrown"
+						>
+							Search
+						</button>
+					</div>
+				</div>
+			</section>
+		</header>
+		<main></main>
+		<footer></footer>
+		<!-- scroll to bottom -->
+		<script src="js/bottom.js"></script>
+	</body>
+</html>
